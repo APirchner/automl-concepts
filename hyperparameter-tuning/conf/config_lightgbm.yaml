@@ -1,0 +1,6 @@
+tune_conf:
+  trials: 25
+
+mlflow_conf:
+  experiment_name: 'lightgbm-demo'
+  tracking_uri: 'http://localhost:5000'
