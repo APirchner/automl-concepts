@@ -25,8 +25,8 @@ def objective(config):
     xgb.train(
         config,
         data_train,
-        num_boost_round=1000,
-        early_stopping_rounds=50,
+        num_boost_round=250,
+        early_stopping_rounds=25,
         evals=[(data_val, 'eval')],
         verbose_eval=False,
         callbacks=[TuneReportCallback()]
